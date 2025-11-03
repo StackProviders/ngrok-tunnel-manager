@@ -16,7 +16,7 @@ export const tunnels: TunnelConfig[] = [
   },
   {
     name: 'WebSocket Server',
-    addr: 5000,
+    addr: 3001,
     authtoken: process.env.NGROK_AUTHTOKEN_2!,
     domain: process.env.NGROK_DOMAIN_2,
   },
