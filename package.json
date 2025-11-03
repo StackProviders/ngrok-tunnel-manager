@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "concurrently \"node index.js\" \"node tunnel1.js\" \"node tunnel2.js\""
+    "tunnels": "concurrently \"node tunnel1.js\" \"node tunnel2.js\""
   },
   "keywords": [],
   "author": "",

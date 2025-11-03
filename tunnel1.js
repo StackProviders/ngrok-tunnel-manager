@@ -6,5 +6,8 @@ connect({
 	authtoken: process.env.NGROK_AUTHTOKEN_1,
 	domain: process.env.NGROK_DOMAIN_1
 })
-.then(listener => console.log(`Tunnel 1: ${listener.url()}`))
+.then(listener => {
+	console.log(`Tunnel 1: ${listener.url()}`);
+	setInterval(() => {}, 1000);
+})
 .catch(err => console.error(`Tunnel 1 failed:`, err.message));
