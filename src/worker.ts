@@ -1,7 +1,7 @@
 import { connect } from '@ngrok/ngrok';
 import type { TunnelConfig } from './config';
 
-const config: TunnelConfig = JSON.parse(process.argv[2]);
+const config: TunnelConfig = JSON.parse(process.env.TUNNEL_CONFIG!);
 
 connect({
   addr: config.addr,
